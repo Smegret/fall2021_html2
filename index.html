@@ -2,12 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <style>
+#header {
+  background-color:lightyellow;
+  color: blue;
+  padding: 20px;
+  text-align: center;
+}
+.paragraph {
+    color: navy;
+    font-family: sans-serif;
+    font-size: 15pt;
+  }
+</style>
     <title>My first webpage</title>
   </head>
   <body style="background-color:lightgray;">
-    <h1 style="color:blue">My Dog!</h1>
-    <h2>This is my mini poodle, <strong><u>Ruffles</strong></u>.</h2>
-    <p style="font-size:120%;"title="Story of Ruffles">He's one of the happiest and <i>friendliest</i> dogs you will ever meet.
+    <h1 id="header">My Dog!</h1>
+        <button onclick="displayResult()">Change text</button>
+        <script>
+function displayResult() {
+document.getElementById("header").innerHTML = "My Heart!";
+}
+</script>
+    <h2 title="Story of Ruffles"> This is my mini poodle, <strong><u>Ruffles</strong></u>.</h2>
+    <p class="paragraph">He's one of the happiest and <i>friendliest</i> dogs you will ever meet.
     <br>
     <img src="images/ruffles_headshot.JPG" alt="Poodle face"></p>
     <h3>Some of Ruffles' favorite activities include:</h3>
@@ -29,13 +48,13 @@
     <body>
 
     <h3>Different Poodle Cuts</h3>
-    <p>There are many different haircuts you can get for your poodle.<br>I like to try
+    <p class="paragraph"> There are many different haircuts you can get for your poodle.<br>I like to try
       different cuts, but also want it to be easy to keep up.</p>
-    <p>Below is a table with some popular cuts and how easy it is to maintain.<br>
-      (Click <a href="https://www.dailypaws.com/dogs-puppies/dog-grooming/poodle-haircuts">
+    <p> Below is a table with some popular cuts and how easy it is to maintain.<br>
+      (Click <a href="https://www.dailypaws.com/dogs-puppies/dog-grooming/poodle-haircuts"target="_blank">
         here</a> to see other common cuts.)</p>
 
-    <table style="width:75%">
+    <table style="width:40%">
       <tr>
         <th>Haircut Style</th>
         <th>Maintainability</th>
@@ -49,7 +68,7 @@
         <td>Difficult</td>
             </tr>
       <tr>
-        <td>Teddy Bear Cut</td>
+        <td><a href="C:\Users\owner\Documents\College\GitHub\fall2021_html2\images\ruffles_teddycut.png">Teddy Bear Cut</a></td>
         <td>Moderate</td><br>
             </tr>
       <tr>
